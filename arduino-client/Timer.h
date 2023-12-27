@@ -13,6 +13,7 @@ public:
   bool isActive();
   bool isStopped();
   void handle();
+  TimerStatus getStatus();
 
   void toggle();
 

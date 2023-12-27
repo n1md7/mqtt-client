@@ -7,7 +7,7 @@ profiles:
     libraries:
       - Ethernet (2.0.2)
       - PubSubClient (2.8.0)
-      - ArduinoJson (6.21.3)
+      - ArduinoJson (6.21.4)
       - AbleButtons (0.3.0)
       - Time (1.6.1)
   mega:
@@ -18,7 +18,7 @@ profiles:
     libraries:
       - Ethernet (2.0.2)
       - PubSubClient (2.8.0)
-      - ArduinoJson (6.21.3)
+      - ArduinoJson (6.21.4)
       - AbleButtons (0.3.0)
       - Time (1.6.1)
   micro:
@@ -29,6 +29,6 @@ profiles:
     libraries:
       - Ethernet (2.0.2)
       - PubSubClient (2.8.0)
-      - ArduinoJson (6.21.3)
+      - ArduinoJson (6.21.4)
       - AbleButtons (0.3.0)
       - Time (1.6.1)

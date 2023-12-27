@@ -16,6 +16,10 @@ Timer::Timer(unsigned long defaultValue) {
   lastTickedAt = Timer::MIN_TIME;
 }
 
+TimerStatus Timer::getStatus() {
+  return status;
+}
+
 void Timer::start() {
   status = TimerStatus::ON;
   lastTickedAt = millis();

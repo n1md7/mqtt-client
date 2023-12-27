@@ -1,13 +1,11 @@
 #include "Component.h"
+#include "Arduino.h"
 
 Component::Component(int pin) {
   this->pin = pin;
   this->state = LOW;
   this->offSignal = LOW;
   this->onSignal = HIGH;
-
-  pinMode(pin, OUTPUT);
-  digitalWrite(pin, state);
 }
 
 Component::Component(int pin, int offSignal, int onSignal) {
@@ -16,6 +14,11 @@ Component::Component(int pin, int offSignal, int onSignal) {
   this->onSignal = onSignal;
   this->offSignal = offSignal;
 
+  pinMode(pin, OUTPUT);
+  digitalWrite(pin, state);
+}
+
+void Component::begin() {
   pinMode(pin, OUTPUT);
   digitalWrite(pin, state);
 }

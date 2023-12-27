@@ -1,13 +1,12 @@
 #ifndef Component_h
 #define Component_h
 
-#include <Arduino.h>
-
 class Component {
 public:
   Component(int pin);
   Component(int pin, int offSignal, int onSignal);
 
+  void begin();
   void on();
   void off();
 
