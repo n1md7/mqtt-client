@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Home Automation</h1>
+</header>
+<main>
+  <h2>Smart things</h2>
+  <p>Status: <span id="status">OFF</span></p>
+  <p id="preview-time">Auto-shutdown in: <span id="time">00:00</span></p>
+  <div id="select-time" style="display: none">
+    <label for="minutes">Minutes:</label>
+    <select id="minutes">
+      <option selected value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="45">45</option>
+    </select>
+    <label for="seconds">Seconds:</label>
+    <select id="seconds">
+      <option value="0">00</option>
+      <option selected value="10">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="45">45</option>
+    </select>
+  </div>
+  <div class="button-container">
+    <button id="on" data-path="/api/on">Turn ON</button>
+    <button id="off" data-path="/api/off">Turn OFF</button>
+  </div>
+  <div id="error-text"></div>
+</main>
+<footer>Smart Automation | Powered by GG-Software</footer>
+<script src="script.mjs" type="module"></script>
+</body>
+</html>

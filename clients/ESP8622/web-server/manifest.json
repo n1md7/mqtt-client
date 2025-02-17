@@ -1,0 +1,34 @@
+{
+	"include": [
+		"$(MODDABLE)/examples/manifest_base.json",
+		"$(MODDABLE)/examples/manifest_net.json",
+		"$(MODDABLE)/modules/files/preference/manifest.json",
+		"$(MODDABLE)/examples/manifest_typings.json",
+		"$(MODULES)/pins/digital/manifest.json"
+	],
+	"modules": {
+		"*": [
+			"./main",
+			"./utils",
+			"./ticker",
+			"./switch",
+			"./storage",
+			"./counter",
+			"$(MODULES)/network/http/*"
+		]
+	},
+	"data":{
+		"*": [
+			"./index.html",
+			"./script.mjs",
+			"./style.css",
+			"./favicon.ico"
+		]
+	},
+	"preload": "http",
+	"config": {
+		"version": "1.0.0",
+		"name": "D0001",
+		"description": "Home automation"
+	}
+}
